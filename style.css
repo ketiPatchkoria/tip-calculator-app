@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+body {
+    background-color: #C5E4E7;
+    font-family: 'Space Mono', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+    color:#5E7A7D;
+    height:100vh;
+    
+}
+
+h1{
+   text-transform: uppercase; 
+   color:#3D6666;
+   font-size: 20px;
+   letter-spacing: 10px;
+   line-height: 26px;
+   margin-top: auto;
+   display:inline-block;
+   margin-left:50%;
+   transform: translateX(-50%);
+   margin-top:2%;
+}
+
+.container {
+    width: 375px;
+    /* height:789px; */
+    background-color: #FFFFFF;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px 25px 0px 0px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    overflow:hidden;
+}
+
+.main,
+.sect-result {
+    width:311px;
+   
+}
+
+.main {
+    margin-top:32px
+}
+
+.sect-1 div:first-child,
+.sect-3 div:first-child {
+    display:flex;
+    justify-content: space-between;
+}
+
+.not-zero-para {
+    color: #E17457;
+}
+
+.hidden {
+    display:none;
+}
+
+.sect-1 div:last-child,
+.sect-3 div:last-child {
+    background-color: #F3F9FA;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:6px;
+}
+
+.sect-1 div:last-child:hover,
+.sect-3 div:last-child:hover {
+cursor: pointer;
+border: 2px solid #26C2AE;
+border-radius: 5px;
+}
+.sect-1 div input,
+.sect-2 div input,
+.sect-3 div input {
+    background-color: #F3F9FA;
+    border: none;
+    text-align: right;
+    width:106px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #00474B;
+    border-radius: 5px;
+    font-family: 'Space Mono';
+}
+
+.sect-2,
+.sect-3,
+.sect-result {
+    margin-top: 32px;
+}
+.sect-2 div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1 fr 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.sect-2 div button {
+    width:146px;
+    height:48px;
+    background-color: #00474B;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 36px;
+    color:#FFFFFF;
+    font-family: 'Space Mono';
+
+}
+.sect-2 div button:hover {
+    cursor: pointer;
+    background-color: #9FE8DF;
+}
+
+.selected {
+    background-color: #26C2AE !important;
+}
+
+.sect-2 div input {
+    width:146px;
+    height:48px;
+    color: #547878;
+}
+
+.sect-2 div input:hover {
+    cursor: pointer;
+    border: 2px solid #26C2AE;
+}
+
+.sect-result {
+    background-color: #00474B;
+    border-radius: 15px;
+    height:257px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.amount {
+    display:flex;
+    width:311px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.amount div p:first-child {
+    color: #FFFFFF;
+}
+
+.amount div:last-child {
+    font-size: 32px;
+    line-height: 47px;
+    color:#26C2AE;
+
+}
+
+.total-amount {
+    margin-top: 25px;
+}
+
+.reset-button {
+    width:281px;
+    height:48px;
+    border-radius: 5px;
+    /* background-color:#26C2AE; */
+    font-size: 20px;
+    line-height: 30px;
+    color:#00474B;
+    background-color: #0D686D;
+    opacity: 0.35;
+    font-family: 'Space Mono';
+}
+
+.reset-button:hover {
+    cursor: pointer;
+    background-color: #9FE8DF;
+    opacity: 1;
+}
+
+@media screen and (min-width: 1000px){
+    .container {
+        width:920px;
+        height:481px;
+        flex-direction: row;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+
+    .main {
+        width:379px;
+        height:388px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .sect-2 div {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1 fr 1fr;
+        row-gap: 16px;
+        column-gap: 14px;
+    }
+
+    .sect-2 div button,
+    .sect-2 div input {
+        width: 117px;
+    }
+
+    .sect-result {
+        width: 413px;
+        height: 417px;
+    }
+
+    .amount {
+        width: 333px;
+        justify-content: space-between;
+    }
+
+    .total-amount {
+        margin-top: 53px;
+    }
+
+    .amount div:last-child {
+        font-size: 48px;
+        line-height: 71px;
+    }
+
+    .reset-button {
+        width: 333px;
+    }
+}
+
+
+

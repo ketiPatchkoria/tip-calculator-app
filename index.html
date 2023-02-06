@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> tip-calculator-app </title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    
+    <body> 
+        <h1>spli<br>tter</h1>
+        <div class="container">
+            
+            <div class="main">
+                
+                <section class="sect-1">
+                    <div>
+                        <p>Bill</p>
+                        <p class="not-zero-para hidden">Can’t be zero</p>
+                    </div>
+                    <div>
+                        <span>$</span>
+                        <input class="bill-input" type="number" placeholder="0" value=""></input>
+                    </div>
+                </section>
+
+                <section class="sect-2">
+                    <p>Select Tip %</p>
+                    <div>
+                        <button value="5">5%</button>
+                        <button value="10">10%</button>
+                        <button value="15">15%</button>
+                        <button value="25">25%</button>
+                        <button value="50">50%</button>
+                        <input class="tip-input" type="number" placeholder="Custom" value=""></input>
+                    </div>
+                </section>
+
+                <section class="sect-3">
+                    <div>
+                        <p>Number of People</p> 
+                        <p class="not-zero-para hidden">Can’t be zero</p>
+                    </div>
+                    <div>
+                        <img class="icon-person" src="images/icon-person.svg" alt="icon-person">
+                        <input class="people-input" type="number" placeholder="0" value=""></input>
+                    </div>
+                </section>
+            
+            </div>
+            
+            <div class="sect-result">
+                <div class="div-result">
+                    <div class="amount tip-amount">
+                        <div class="sacdeli">
+                            <p>Tip Amount</p>
+                            <p>/ person</p>
+                        </div>
+                        <div>$0.00</div>
+                    </div>
+                    <div class="amount total-amount">
+                        <div>
+                            <p>Total</p>
+                            <p>/ person</p>
+                        </div>
+                        <div>$0.00</div>
+                    </div>
+                </div>
+
+                <button class="reset-button">RESET</button>
+            </div>
+            
+
+        </div>
+    </body>
